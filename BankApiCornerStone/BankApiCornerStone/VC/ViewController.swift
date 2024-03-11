@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     }()
 
     let blurEffectView: UIVisualEffectView = {
-        let blurEffect = UIBlurEffect(style: .systemUltraThinMaterialLight)
+        let blurEffect = UIBlurEffect(style: .light)
         let blurView = UIVisualEffectView(effect: blurEffect)
         return blurView
     }()
@@ -22,9 +22,9 @@ class ViewController: UIViewController {
         let view = UIView()
         view.layer.cornerRadius = 20
         view.layer.shadowColor = UIColor.black.cgColor
-        view.layer.shadowOpacity = 0.5
+        view.layer.shadowOpacity = 0.2
         view.layer.shadowOffset = CGSize(width: 0, height: 3)
-        view.layer.shadowRadius = 10
+        view.layer.shadowRadius = 5
         return view
     }()
 
@@ -50,12 +50,8 @@ class ViewController: UIViewController {
         let button = UIButton()
         button.setTitle("Sign In", for: .normal)
         button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = UIColor(red: 52/255, green: 152/255, blue: 219/255, alpha: 1.0)
-        button.layer.cornerRadius = 12
-        button.layer.shadowColor = UIColor.black.cgColor
-        button.layer.shadowOpacity = 0.5
-        button.layer.shadowOffset = CGSize(width: 0, height: 3)
-        button.layer.shadowRadius = 5
+        button.backgroundColor = UIColor(red: 46/255, green: 204/255, blue: 113/255, alpha: 1.0)
+        button.layer.cornerRadius = 20
         button.addTarget(self, action: #selector(signInButtonTapped), for: .touchUpInside)
         return button
     }()
@@ -112,7 +108,7 @@ class ViewController: UIViewController {
         signInButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(imageView.snp.bottom).offset(40)
-            make.width.equalTo(200)
+            make.width.equalTo(imageView)
             make.height.equalTo(50)
         }
 
