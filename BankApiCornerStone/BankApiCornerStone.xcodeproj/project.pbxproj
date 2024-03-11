@@ -63,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				09D1D0472B9EE92600091D7E /* BankApiCornerStone */,
-				09D1D06F2B9EEA4700091D7E /* Model */,
 				09D1D0462B9EE92600091D7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,11 +84,11 @@
 				09D1D06E2B9EEA2D00091D7E /* Network */,
 				09D1D06D2B9EEA2000091D7E /* Helpers */,
 				09D1D0702B9EEA5600091D7E /* VC */,
-				09D1D04C2B9EE92600091D7E /* ViewController.swift */,
 				09D1D04E2B9EE92600091D7E /* Main.storyboard */,
 				09D1D0512B9EE92700091D7E /* Assets.xcassets */,
 				09D1D0532B9EE92700091D7E /* LaunchScreen.storyboard */,
 				09D1D0562B9EE92700091D7E /* Info.plist */,
+				09D1D06F2B9EEA4700091D7E /* Model */,
 			);
 			path = BankApiCornerStone;
 			sourceTree = "<group>";
@@ -121,8 +120,6 @@
 			children = (
 				09D1D0732B9EEC4300091D7E /* User.swift */,
 				09D1D0752B9EED4500091D7E /* TokenResponse.swift */,
-				09D1D0772B9EEDE000091D7E /* SignUpViewController.swift */,
-				09D1D0792B9EF88A00091D7E /* SignInViewController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -130,6 +127,9 @@
 		09D1D0702B9EEA5600091D7E /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				09D1D04C2B9EE92600091D7E /* ViewController.swift */,
+				09D1D0792B9EF88A00091D7E /* SignInViewController.swift */,
+				09D1D0772B9EEDE000091D7E /* SignUpViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
